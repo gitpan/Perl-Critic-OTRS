@@ -5,8 +5,7 @@ use strict;
 
 # ABSTRACT: A collection of handy Perl::Critic policies
 
-
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 1; # End of Perl::Critic::OTRS
@@ -20,7 +19,7 @@ Perl::Critic::OTRS - A collection of handy Perl::Critic policies
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -37,9 +36,23 @@ Kernel::System::DB provides a method called C<FetchrowHashref>, but this method
 is deprecated as this relies on C<DBI>'s fetchrow_hashref. Some users have
 reported problems with it on some database systems.
 
-=head1 VERSION
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitDumper>
 
-Version 0.01
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitLocaltime>
+
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitLowPrecedenceOps>
+
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitOpen>
+
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitRequire>
+
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions>
+
+=head2 L<Perl::Critic::Policy::OTRS::RequireCamelCase>
+
+=head2 L<Perl::Critic::Policy::OTRS::RequireParensWithMethods>
+
+=head2 L<Perl::Critic::Policy::OTRS::RequireTrueReturnValueForModules>
 
 =head1 WHY A COLLECTION OF OTRS POLICIES?
 
@@ -127,7 +140,7 @@ This software is Copyright (c) 2010 by Renee Baecker.
 
 This is free software, licensed under:
 
-  The Artistic License 2.0
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
 

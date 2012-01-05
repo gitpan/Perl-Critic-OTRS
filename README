@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Perl-Critic-OTRS,
-version 0.01:
+version 0.02:
 
   A collection of handy Perl::Critic policies
 
@@ -9,6 +9,6 @@ This software is Copyright (c) 2010 by Renee Baecker.
 
 This is free software, licensed under:
 
-  The Artistic License 2.0
+  The Artistic License 2.0 (GPL Compatible)
 
 

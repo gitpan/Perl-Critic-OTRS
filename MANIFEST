@@ -16,5 +16,16 @@ lib/Perl/Critic/Policy/OTRS/ProhibitSomeCoreFunctions.pm
 lib/Perl/Critic/Policy/OTRS/RequireCamelCase.pm
 lib/Perl/Critic/Policy/OTRS/RequireParensWithMethods.pm
 lib/Perl/Critic/Policy/OTRS/RequireTrueReturnValueForModules.pm
+t/00-load.t
+t/01_true_value.t
+t/02_prohibit_dumper.t
+t/Module/FalseReturnZero.pm
+t/Module/NoReturn.pm
+t/Module/TrueReturn.pm
+t/Module/TrueReturnNewline.pm
+t/Module/TrueReturnPod.pm
+t/Module/TrueReturnString.pm
+t/Module/WithDumper.pm
+t/Module/WithDumperLong.pm
 xt/release/pod-coverage.t
 xt/release/pod-syntax.t

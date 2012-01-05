@@ -42,7 +42,7 @@ Perl::Critic::Policy::OTRS::RequireParensWithMethods
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 
@@ -54,7 +54,7 @@ This software is Copyright (c) 2010 by Renee Baecker.
 
 This is free software, licensed under:
 
-  The Artistic License 2.0
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
 
