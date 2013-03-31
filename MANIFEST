@@ -12,6 +12,7 @@ lib/Perl/Critic/Policy/OTRS/ProhibitLocaltime.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitLowPrecendeceOps.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitOpen.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitRequire.pm
+lib/Perl/Critic/Policy/OTRS/ProhibitRmtree.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitSomeCoreFunctions.pm
 lib/Perl/Critic/Policy/OTRS/RequireCamelCase.pm
 lib/Perl/Critic/Policy/OTRS/RequireParensWithMethods.pm

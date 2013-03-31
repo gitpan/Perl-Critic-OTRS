@@ -22,7 +22,7 @@ my @prohibited = qw(print die exit);
 
 sub violates {
     my ( $self, $elem ) = @_;
-    
+
     return if !grep{ $elem eq $_ }@prohibited;
     return if $self->_is_script( $elem );
     return $self->violation( $DESC, $EXPL, $elem );
@@ -30,16 +30,21 @@ sub violates {
 
 sub _is_script {
     my ( $self, $elem ) = @_;
-    
+
     my $document = $elem->document;
     my $filename = $document->logical_filename;
-    
+
+    # This applies only to modules, not scripts.
     my $is_module = $filename =~ m{ \.pm \z }xms;
-    
+
+    # For now, only run this for controller modules (Kernel/Modules/*, Kernel/Output/HTML/)
+    $is_module &&= $filename =~ m{ Kernel/Modules }xms;
+
     return !$is_module;
 }
 
 1;
+
 __END__
 =pod
 
@@ -49,7 +54,7 @@ Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -57,7 +62,7 @@ Renee Baecker <module@renee-baecker.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Renee Baecker.
+This software is Copyright (c) 2013 by Renee Baecker.
 
 This is free software, licensed under:
 

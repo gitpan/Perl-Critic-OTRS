@@ -1,5 +1,9 @@
 Release history for Perl::Critic::OTRS
 
+0.03    01 Apr 2013
+        + Only run tests for Code in Kernel/Modules
+        + other code improvements
+
 0.02    05 Jan 2012
         + fix some bugs
         + add tests

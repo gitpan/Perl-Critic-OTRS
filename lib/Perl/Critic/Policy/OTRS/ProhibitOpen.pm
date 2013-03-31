@@ -20,12 +20,14 @@ sub applies_to           { return 'PPI::Token::Word'  }
 
 sub violates {
     my ( $self, $elem ) = @_;
-    
+
     return if $elem ne 'open';
     return $self->violation( $DESC, $EXPL, $elem );
 }
 
 1;
+
+
 __END__
 =pod
 
@@ -35,7 +37,7 @@ Perl::Critic::Policy::OTRS::ProhibitOpen
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
@@ -43,7 +45,7 @@ Renee Baecker <module@renee-baecker.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Renee Baecker.
+This software is Copyright (c) 2013 by Renee Baecker.
 
 This is free software, licensed under:
 

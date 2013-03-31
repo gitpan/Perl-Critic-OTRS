@@ -5,7 +5,8 @@ use strict;
 
 # ABSTRACT: A collection of handy Perl::Critic policies
 
-our $VERSION = '0.02';
+
+our $VERSION = '0.03';
 
 
 1; # End of Perl::Critic::OTRS
@@ -19,7 +20,7 @@ Perl::Critic::OTRS - A collection of handy Perl::Critic policies
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -54,6 +55,10 @@ reported problems with it on some database systems.
 
 =head2 L<Perl::Critic::Policy::OTRS::RequireTrueReturnValueForModules>
 
+=head1 VERSION
+
+Version 0.03
+
 =head1 WHY A COLLECTION OF OTRS POLICIES?
 
 The policies bundled in this distributions represent the coding guideline
@@ -62,10 +67,6 @@ project itself does.
 
 So every programmer who is familiar with the OTRS codebase can read and follow
 your code.
-
-=head1 AUTHOR
-
-Renee Baecker, C<< <module@renee-baecker.de> >>
 
 =head1 BUGS
 
@@ -115,18 +116,7 @@ Thanks to
 
 =item * Martin Edenhofer for creating a great tool like OTRS
 
-=back
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2010 Renee Baecker.
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of:
-
-=over 4
-
-=item * the Artistic License version 2.0.
+=item * Martin Gruner for improvements for this module
 
 =back
 
@@ -136,7 +126,7 @@ Renee Baecker <module@renee-baecker.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Renee Baecker.
+This software is Copyright (c) 2013 by Renee Baecker.
 
 This is free software, licensed under:
 
