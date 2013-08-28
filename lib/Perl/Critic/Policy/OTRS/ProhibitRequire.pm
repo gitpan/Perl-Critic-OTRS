@@ -1,5 +1,7 @@
 package Perl::Critic::Policy::OTRS::ProhibitRequire;
 
+# ABSTRACT: Do not use "require"
+
 use strict;
 use warnings;
 
@@ -28,15 +30,16 @@ sub violates {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
 
-Perl::Critic::Policy::OTRS::ProhibitRequire
+Perl::Critic::Policy::OTRS::ProhibitRequire - Do not use "require"
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
@@ -51,4 +54,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

@@ -1,5 +1,7 @@
 package Perl::Critic::Policy::OTRS::ProhibitFetchrowHashref;
 
+# ABSTRACT: Do no use FetchrowHashref
+
 use strict;
 use warnings;
 
@@ -32,15 +34,16 @@ sub violates {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
 
-Perl::Critic::Policy::OTRS::ProhibitFetchrowHashref
+Perl::Critic::Policy::OTRS::ProhibitFetchrowHashref - Do no use FetchrowHashref
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
@@ -55,4 +58,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

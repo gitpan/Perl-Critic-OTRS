@@ -1,5 +1,7 @@
 package Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions;
 
+# ABSTRACT: Some core functions should not be used
+
 use strict;
 use warnings;
 
@@ -46,15 +48,16 @@ sub _is_script {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
 
-Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions
+Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions - Some core functions should not be used
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
@@ -69,4 +72,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

@@ -1,4 +1,6 @@
-package Perl::Critic::Policy::OTRS::ProhibitLowPrecendeceOps;
+package Perl::Critic::Policy::OTRS::ProhibitLowPrecedenceOps;
+
+# ABSTRACT: Do not use "not", "and" and other low precedence operators
 
 use strict;
 use warnings;
@@ -13,7 +15,7 @@ our $VERSION = '0.01';
 Readonly::Scalar my $DESC => q{Use of low precedence operators is not allowed};
 Readonly::Scalar my $EXPL => q{Replace low precedence operators with the high precedence substitutes};
 
-my %lowprecendece = (
+my %lowprecedence = (
   not => '!',
   and => '&&',
   or  => '||',
@@ -27,22 +29,23 @@ sub applies_to           { return 'PPI::Token::Operator'  }
 sub violates {
     my ( $self, $elem ) = @_;
 
-    return if !grep{ $elem eq $_ }keys %lowprecendece;
+    return if !grep{ $elem eq $_ }keys %lowprecedence;
     return $self->violation( $DESC, $EXPL, $elem );
 }
 
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
 
-Perl::Critic::Policy::OTRS::ProhibitLowPrecendeceOps
+Perl::Critic::Policy::OTRS::ProhibitLowPrecedenceOps - Do not use "not", "and" and other low precedence operators
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
@@ -57,4 +60,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

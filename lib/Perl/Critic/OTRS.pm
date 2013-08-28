@@ -6,12 +6,13 @@ use strict;
 # ABSTRACT: A collection of handy Perl::Critic policies
 
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 1; # End of Perl::Critic::OTRS
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -20,7 +21,7 @@ Perl::Critic::OTRS - A collection of handy Perl::Critic policies
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -57,7 +58,7 @@ reported problems with it on some database systems.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =head1 WHY A COLLECTION OF OTRS POLICIES?
 
@@ -118,6 +119,8 @@ Thanks to
 
 =item * Martin Gruner for improvements for this module
 
+=item * Michiel Beijen for improvements for this module
+
 =back
 
 =head1 AUTHOR
@@ -133,4 +136,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

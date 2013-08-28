@@ -31,6 +31,7 @@ sub violates {
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -39,7 +40,7 @@ Perl::Critic::Policy::OTRS::ProhibitDumper - Check module for use of "Dumper"
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
@@ -54,4 +55,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-

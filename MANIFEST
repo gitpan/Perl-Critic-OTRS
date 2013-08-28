@@ -9,7 +9,7 @@ lib/Perl/Critic/OTRS.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitDumper.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitFetchrowHashref.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitLocaltime.pm
-lib/Perl/Critic/Policy/OTRS/ProhibitLowPrecendeceOps.pm
+lib/Perl/Critic/Policy/OTRS/ProhibitLowPrecedenceOps.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitOpen.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitRequire.pm
 lib/Perl/Critic/Policy/OTRS/ProhibitRmtree.pm

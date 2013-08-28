@@ -1,5 +1,7 @@
 package Perl::Critic::Policy::OTRS::RequireCamelCase;
 
+# ABSTRACT: Variable, subroutine, and package names have to be in CamelCase
+
 use strict;
 use warnings;
 
@@ -87,17 +89,17 @@ sub _variable_is_camelcase {
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
 
-Perl::Critic::Policy::OTRS::RequireCamelCase
+Perl::Critic::Policy::OTRS::RequireCamelCase - Variable, subroutine, and package names have to be in CamelCase
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 AUTHOR
 
@@ -112,4 +114,3 @@ This is free software, licensed under:
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
