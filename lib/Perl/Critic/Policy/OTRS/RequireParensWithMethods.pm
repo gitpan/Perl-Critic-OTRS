@@ -10,14 +10,14 @@ use base 'Perl::Critic::Policy';
 
 use Readonly;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 Readonly::Scalar my $DESC => q{Method invocation should use "()"};
 Readonly::Scalar my $EXPL => q{Use "->MethodName()" instead of "->MethodName".};
 
 sub supported_parameters { return; }
 sub default_severity     { return $SEVERITY_HIGHEST; }
-sub default_themes       { return qw( otrs ) }
+sub default_themes       { return qw( otrs otrs_lt_3_3 ) }
 sub applies_to           { return 'PPI::Token::Operator' }
 
 sub violates {
@@ -51,7 +51,7 @@ Perl::Critic::Policy::OTRS::RequireParensWithMethods - Use parens when a method 
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 AUTHOR
 

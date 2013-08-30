@@ -5,8 +5,7 @@ use strict;
 
 # ABSTRACT: A collection of handy Perl::Critic policies
 
-
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 
 1; # End of Perl::Critic::OTRS
@@ -21,7 +20,7 @@ Perl::Critic::OTRS - A collection of handy Perl::Critic policies
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -46,6 +45,8 @@ reported problems with it on some database systems.
 
 =head2 L<Perl::Critic::Policy::OTRS::ProhibitOpen>
 
+=head2 L<Perl::Critic::Policy::OTRS::ProhibitPushISA>
+
 =head2 L<Perl::Critic::Policy::OTRS::ProhibitRequire>
 
 =head2 L<Perl::Critic::Policy::OTRS::ProhibitSomeCoreFunctions>
@@ -55,10 +56,6 @@ reported problems with it on some database systems.
 =head2 L<Perl::Critic::Policy::OTRS::RequireParensWithMethods>
 
 =head2 L<Perl::Critic::Policy::OTRS::RequireTrueReturnValueForModules>
-
-=head1 VERSION
-
-Version 0.04
 
 =head1 WHY A COLLECTION OF OTRS POLICIES?
 

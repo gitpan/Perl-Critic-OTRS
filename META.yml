@@ -15,4 +15,4 @@ name: Perl-Critic-OTRS
 requires:
   Perl::Critic: 1.105
   Readonly: 1.03
-version: 0.04
+version: 0.05
